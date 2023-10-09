@@ -4,12 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
 
   @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+  @font-face {
+    font-family: 'Gyosho';
+    src: url(../fontes/Gyosho.ttf)
+    format('trutype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 :root{
     --fonte-altenativo: Arial, Helvetica, sans-serif;
     --fonte-texto: 'Borel', cursive;
   
-    --titulo:   'Rock Salt', cursive;
+    --fonte-destaque:'Gyosho';
   
 
 }
@@ -27,24 +34,31 @@ html body{
 header{
     position: fixed;
     width: 100%;
-  
+   
+    color: white;
+    text-align: center;
+    background: transparent;
 }
-header,footer{
+footer{
     background: black;
 color: white;
     text-align: center;
 }
 header > h1{
-    padding-top: 50px;
+   
     font-variant:small-caps; /* maiusculas com destaque as primeiras letras */
     /* text-transform:uppercase ;  (letras maiusculas */
-   font-family: var(--titulo);
-   font-size: 5vw;
+   font-family:'Gyosho';
+   font-size: 3em;
+   color: #F87B1F;
+   margin-top: 50px;
 
 }
 nav > ul{
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
+    
+   
     
    
 }
@@ -52,12 +66,19 @@ nav > ul >li {
     padding: 10px;
     text-decoration: none;
     background-color: burlywood;
-    margin-left: 3px;
-    width: 50px;
-    border-radius: 30px;
+
+   margin: auto;
+    width: 90%;
+    border-radius: 0px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+}
+nav > ul >li:hover{
+    cursor: pointer;
+    background-color: #F87B1F;
+    color: whitesmoke;
 }
 header > p {
-    padding-bottom: 50px;
+    
     font-family: var(--fonte-altenativo);
     font-size: 3vw;
 }
@@ -87,20 +108,28 @@ section{
  
 }
 section >p{
-    padding-bottom: 2em;
+    padding-bottom: 1em;
+}
+strong{
+    color: #F87B1F;
 }
 section.normal{
     background: white;
     color: black;
     font-weight:600;
+background-image: url(../imagens/Captura\ de\ tela\ 2023-10-09\ 105311.png);
+background-repeat: no-repeat;
+background-size:cover;
+background-position:center center;
 
 }
 section.imagem{
     background: rgb(51, 51, 51);
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.501);background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.501);
+    background-size: cover;
     background-attachment: fixed;
-
+ 
    
   
 
@@ -118,7 +147,8 @@ section.imagem >p{
 section#img01{
     background-image: url(../imagens/sashime\ .jpeg);
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    box-sizing: border-box;
     background-repeat: no-repeat;
     height: 700px;
    
@@ -127,8 +157,29 @@ section#img01{
 section#img02{
     background-image: url(../imagens/BackgroundEraser_20231009_013804459-01.jpeg);
     background-position: center center;
-    background-size:contain;
+    background-size: contain;
+    box-sizing: border-box;
     background-repeat: no-repeat;
+    padding-top: 50px;
+    height: 600px;
+
+}
+section#img03{
+    background-image: url(https://fastly.4sqi.net/img/general/width960/13320375_RVnCRLb2nxUsPc_8bZOxr995mdQpGdv8GvZK3rAmMcw.jpg);
+    background-position: center center;
+    background-size: contain;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    height: 700px;
+
+}
+section#img04{
+    background-image: url(../imagens/Captura\ de\ tela\ 2023-10-09\ 112808.png);
+    background-position: center center;
+    background-size: contain;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    height: 600px;
 
 }
 footer{
