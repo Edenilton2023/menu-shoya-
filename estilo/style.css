@@ -73,23 +73,41 @@ nav {
 ul{
     width: 100%;
     display: flex;
-    justify-content:space-around;
-    gap: 100px;
+    justify-content:space-evenly;
+    gap:25px;
     
 }
 nav > ul >li {
- 
-    padding: 8px;
+ padding: 8px;
     text-decoration: none;
     background-color: burlywood;
-  gap: 50px;
+  gap: 10px;
 
    
 
 
   
-    width: 60px;
+    width: 150px;
     border-radius: 0px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+}
+.abalt{
+   
+    display: flex;
+   gap: 5px;
+   margin: 0px;
+
+    align-items: center;
+ /* display: none; */
+  
+}
+.abalt > li{
+    width: 40px;
+    padding: 2px;
+    text-decoration: none;
+    background-color: burlywood;
+   
+    border-radius:  30px;
     border: 1px solid rgba(0, 0, 0, 0.322);
 }
 .direita{
