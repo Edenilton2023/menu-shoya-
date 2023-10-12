@@ -44,7 +44,7 @@ header{
     background:  rgb(167, 62, 62);
     background-image: url(../imagens/sho-ya1.png);
     background-repeat: no-repeat;
-  
+  background-size: cover;
     background-position:center, center ;
     align-items: end;
     justify-content: space-between;
