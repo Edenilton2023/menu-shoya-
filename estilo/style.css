@@ -41,7 +41,7 @@ header{
 
     color: white;
     text-align:center;
-    background:  rgb(167, 62, 62);
+    background:black);
     background-image: url(../imagens/sho-ya1.png);
     background-repeat: no-repeat;
   background-size: cover;
@@ -73,13 +73,17 @@ nav {
 ul{
     width: 100%;
     display: flex;
-    justify-content:space-between ;
+    justify-content:space-around;
+    gap: 100px;
     
 }
 nav > ul >li {
-    padding: 10px;
+ 
+    padding: 8px;
     text-decoration: none;
     background-color: burlywood;
+  gap: 50px;
+
    
 
 
