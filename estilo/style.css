@@ -26,26 +26,29 @@
 }
 
 html body{
-    min-height: 100vh;
+   height: 100vh;
     background: black;
   
    
 
 }
 header{
+    margin-top: 60px;
+    margin-bottom: 0px;
    display: flex;
     position: fixed;
     width: 100%;
-   
+
     color: white;
     text-align:center;
-    background:  rgb(51, 51, 51);
+    background:  rgb(167, 62, 62);
     background-image: url(../imagens/sho-ya1.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position:top ,bottom ;
+  
+    background-position:center, center ;
     align-items: end;
-    justify-content: center;
+    justify-content: space-between;
+    height:20%;
     
 }
 footer{
@@ -56,14 +59,22 @@ footer{
 
 
 nav {
+   
     display: flex;
-    justify-content:center;
+   justify-content: space-evenly;
     width: 100%;
     text-align: center;
+    margin-bottom: 2px;
     
    
     
   
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+    
 }
 nav > ul >li {
     padding: 10px;
@@ -140,6 +151,7 @@ section.imagem{
     background: rgb(51, 51, 51);
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.501);
+    margin-top: 0px;
 
    
  
@@ -182,8 +194,8 @@ section#img01 {
     
 display: flex;
 justify-content: center;
-margin-left: -40px;
-margin-top: 8px;
+
+margin-top: 80px;
 }
  #butao{
  
