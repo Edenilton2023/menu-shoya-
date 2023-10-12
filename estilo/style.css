@@ -27,63 +27,78 @@
 
 html body{
     min-height: 100vh;
-    background: lightgray;
+    background: black;
+  
    
 
 }
 header{
+   display: flex;
     position: fixed;
     width: 100%;
+    height: 155px;
    
     color: white;
-    text-align: center;
-    background: transparent;
+    text-align:center;
+    background:  rgb(51, 51, 51);
+    background-image: url(../imagens/sho-ya1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top ,bottom ;
+    align-items: end;
+    justify-content: center;
+    
 }
 footer{
     background: black;
-color: white;
+    color: white;
     text-align: center;
 }
-header > h1{
-   
-    font-variant:small-caps; /* maiusculas com destaque as primeiras letras */
-    /* text-transform:uppercase ;  (letras maiusculas */
-   font-family:'Gyosho';
-   font-size: 3em;
-   color: #F87B1F;
-   margin-top: 50px;
 
-}
 
-nav > ul{
+nav {
     display: flex;
-    justify-content:center;
-    width: 100%;
-    text-align: center;
+width: 100%;
+margin-bottom: 0;
+
+}
+nav ,ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+ align-items: end;
+ width: 100%;
+
+ 
     
-   
-    
-   
+  
 }
 nav > ul >li {
     padding: 10px;
     text-decoration: none;
     background-color: burlywood;
+   
+
 
   
-    width: 90px;
+    width: 60px;
     border-radius: 0px 30px;
     border: 1px solid rgba(0, 0, 0, 0.322);
 }
+.direita{
+    border-radius:30px 0px ;
+}
+
 nav > ul >li:hover{
     cursor: pointer;
     background-color: #F87B1F;
     color: whitesmoke;
 }
-header > p {
+nav >ul > li > a {
     
     font-family: var(--fonte-altenativo);
-    font-size: 3vw;
+    font-size: 0.8em;
+  
 }
 
 header a, footer a {
@@ -104,33 +119,42 @@ p{
 }
 
 section{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
     line-height: 3em;
     padding-left: 30px;
  
+ 
 }
-section >p{
-    padding-bottom: 1em;
-}
+
 strong{
     color: #F87B1F;
 }
 section.normal{
-    background: white;
+    background:black;
     color: black;
-    font-weight:600;
-background-image: url(../imagens/Captura\ de\ tela\ 2023-10-09\ 105311.png);
+ 
+   
+background-image: url();
 background-repeat: no-repeat;
-background-size:cover;
+background-size:contain;
+margin: -60px 0px;
+
 background-position:center center;
+
 
 }
 section.imagem{
     background: rgb(51, 51, 51);
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.501);
-    background-size: cover;
+
+   
+ 
+    
+  
+
+    
     background-attachment: fixed;
  
    
@@ -138,56 +162,59 @@ section.imagem{
 
 
 }
-section.imagem >p{
+section.imagem >.container >p{
     line-height: normal;
-    font-size: 1em;
-    margin-top: 200px;
+    font-size: .8em;
+   
+     margin-top:-40px;
+    
     background-image: linear-gradient(to right ,  rgba(0, 0, 0, 0.500) 30% , transparent  );
-    width:500px;
+    width:100%px;
  display: inline-block;
  padding: 5px;
  text-shadow: 01px ,1px ,1px black;
 
       
 }
-section#img01{
-    background-image: url(../imagens/sashime\ .jpeg);
+.container{
+   max-width: 70px;
+   
+}
+section#img01 {
+    background-image: url(../imagens/capa.png);
     background-position: center center;
     background-size: contain;
     box-sizing: border-box;
     background-repeat: no-repeat;
-    height: 700px;
+    height: 570px;
+    
+display: flex;
+justify-content: center;
+margin-left: -40px;
+margin-top: 8px;
+}
+ #butao{
+ 
+    background-color:transparent;
+    display: block;
+    width: 150px;
+    height: 150px;border-radius: 50%;
+    cursor: pointer;
    
   
 }
+
 section#img02{
-    background-image: url(../imagens/BackgroundEraser_20231009_013804459-01.jpeg);
+    background-image: url(../imagens/sasime.png);
     background-position: center center;
     background-size: contain;
     box-sizing: border-box;
     background-repeat: no-repeat;
-    padding-top: 50px;
-    height: 600px;
-
+    height: 570px;
+   
+  
 }
-section#img03{
-    background-image: url(https://fastly.4sqi.net/img/general/width960/13320375_RVnCRLb2nxUsPc_8bZOxr995mdQpGdv8GvZK3rAmMcw.jpg);
-    background-position: center center;
-    background-size: contain;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    height: 700px;
 
-}
-section#img04{
-    background-image: url(../imagens/Captura\ de\ tela\ 2023-10-09\ 112808.png);
-    background-position: center center;
-    background-size: contain;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    height: 600px;
-
-}
 footer{
     padding: 8px;
 }
