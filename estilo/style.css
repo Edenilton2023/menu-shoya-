@@ -41,7 +41,7 @@ header{
 
     color: white;
     text-align:center;
-    background:black);
+    background:black;
     background-image: url(../imagens/sho-ya1.png);
     background-repeat: no-repeat;
   background-size: cover;
@@ -222,6 +222,37 @@ section#img02{
    
   
 }
+section#img03{
+    background-image: url(../imagens/genki.png);
+    background-position: center center;
+    background-size: contain;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    height: 570px;
+   
+  
+}
+section#img04{
+    background-image: url(../imagens/IKKIGAI.png);
+    background-position: center center;
+    background-size: contain;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    height: 570px;
+   
+  
+}
+section#img05{
+    background-image: url(../imagens/POWE.png);
+    background-position: center center;
+    background-size: contain;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    height: 570px;
+   
+  
+}
+
 
 footer{
     padding: 8px;
